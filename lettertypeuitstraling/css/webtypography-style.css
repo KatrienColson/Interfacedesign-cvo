@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@700&family=Major+Mono+Display&family=Merriweather+Sans&family=Open+Sans+Condensed:wght@700&family=Playfair+Display:wght@900&family=Saira+Condensed:wght@700&family=Turret+Road:wght@500&display=swap');/*minimalistische*/
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@700&family=Open+Sans+Condensed:wght@700&family=Saira+Condensed:wght@700&display=swap');/*richting*/
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@700&display=swap');/*kids*/
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');/*huwelijksverjaardag*/
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap');/*eighties*/
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@700&family=Major+Mono+Display&family=Merriweather+Sans&family=Nosifer&family=Open+Sans+Condensed:wght@700&family=Playfair+Display:wght@900&family=Saira+Condensed:wght@700&family=Syne+Mono&family=Turret+Road:wght@500&display=swap');/*grunge*/
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');/*gevaarlijk*/
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');/*lente*/
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@700&family=Merriweather+Sans&family=Open+Sans+Condensed:wght@700&family=Saira+Condensed:wght@700&display=swap');/*fiscaal*/
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@700&family=Merriweather+Sans&family=Open+Sans+Condensed:wght@700&family=Playfair+Display:wght@900&family=Saira+Condensed:wght@700&display=swap');/*magazine*/
+body{
+    margin: 0;
+    padding: 0;
+}
+div{
+    text-align: center;
+    padding: 70px;
+    margin: 20px;
+    font-size: 1.5rem
+}
+.minimalistische{
+    font-family: 'Corben', cursive;
+    font-family: 'Major Mono Display', monospace;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Saira Condensed', sans-serif;
+    font-family: 'Turret Road', cursive;
+    color: lightgrey;
+    border: 1px solid lightgrey; 
+}
+.richting{
+    font-family: 'Corben', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Saira Condensed', sans-serif;
+    color: white;
+    background-color: #005c8c;
+    border: 3px solid black;
+}
+.kids{
+    font-family: 'Corben', cursive;
+    color: yellow;
+    background-color: blue;
+}
+span{
+    color: red;
+}
+.extra{
+    background-color: black;
+}
+.huwelijksverjaardag {
+    font-family: 'Allura', cursive;
+    letter-spacing: 0.3rem;
+}
+/*shimmer quote*/
+.shimmer {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.1);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#222),
+    to(#222),
+    color-stop(0.9, #AD8D55)
+  );
+  background: -moz-gradient(
+    linear,
+    left top,
+    right top,
+    from(#222),
+    to(#222),
+    color-stop(0.9, #AD8D55)
+  );
+  background: gradient(
+    linear,
+    left top,
+    right top,
+    from(#222),
+    to(#222),
+    color-stop(0.9, #AD8D55)
+  );
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #222;
+}
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+.eighties{
+    font-family: 'Oleo Script', cursive;
+    background-color: black;
+    color: #FF1493;
+}
+.grunge{
+    font-family: 'Corben', cursive;
+font-family: 'Major Mono Display', monospace;
+font-family: 'Merriweather Sans', sans-serif;
+font-family: 'Nosifer', cursive;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Saira Condensed', sans-serif;
+font-family: 'Syne Mono', monospace;
+font-family: 'Turret Road', cursive;
+background-color: #2e856e;   
+}
+.gevaar{
+    font-family: 'Rozha One', serif;
+    background-image: linear-gradient(to right, black, yellow,yellow, black);
+}
+.lente{
+    font-family: 'Alex Brush', cursive;
+    background-image: linear-gradient(#FFEBCD, #F8F8FF, #FFF0F5);
+    color: #FF1493;
+    letter-spacing: 0.3rem;
+}
+.fiscaal{
+    font-family: 'Corben', cursive;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Saira Condensed', sans-serif;
+    border: 1px solid black;
+    color: darkslateblue;
+}
+.magazine{
+    font-family: 'Corben', cursive;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Saira Condensed', sans-serif;
+}

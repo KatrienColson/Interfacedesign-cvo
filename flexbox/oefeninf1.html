@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flexbox - introductie</title>
+    <style>
+      body {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: 1.25em;
+        font-weight: bolder;
+        color: #fff;
+      }
+      /*ul is hier de "parant"*/
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 50px 0;
+        background-color: rgba(255, 105, 180, 0.5);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      li {
+        background-color: #333;
+        margin: 0.5em;
+        padding: 0.5em;
+      }
+      .flex2 {
+        align-self: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li class="flex1">1 Lorem ipsum dolor sit amet.</li>
+      <li class="flex1">2 Illum facere saepe nam praesentium.</li>
+      <li class="flex2">3 Vero quia possimus unde sint!</li>
+      <li class="flex1">4 Cupiditate, ab molestias aliquam cum.</li>
+      <li class="flex2">5 Recusandae inventore distinctio reiciendis id.</li>
+      <li class="flex1">6 Laboriosam iure saepe distinctio, sunt.</li>
+    </ul>
+  </body>
+</html>

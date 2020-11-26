@@ -1,0 +1,67 @@
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+    /*Dit heeft te maken met de anchor links, dit zijn de id "s */
+}
+
+body {
+    font-family: Helvetica Neue, Arial, sans-serif;
+}
+nav{
+    background-color: #333333;
+    padding: .15em 0;
+    width: 100%;
+}
+nav ul{
+    list-style: none;
+    display: flex; /*dit op de parant zetten, dan gaan de kinderen flexen*/
+    flex-direction: row;/* of column of reverse: begin aan de anderekant*/
+}
+nav ul li{
+    margin-left: 2.5em;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav.nav-sticky{
+    position: -webkit-sticky;/* nu werkt die ook in oudere safary en chroom*/
+    position: sticky;
+    top: 0px;
+}
+header{
+    background-color: hotpink;
+    color: white;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;/*hetzelfde als text-align:center*/
+    align-items: center;
+}
+header h1{
+    font-size: 3.5em;
+}
+article{
+    line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50rem;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+article h1{
+    padding-top: 75px;/*in de hoogte geef je het een PX waarde*/
+}
+article p:last-child{
+    padding-bottom: 150px;
+}
+.fixed-footer{
+    background-color: hotpink;
+    opacity: .85;
+    padding: 2em;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

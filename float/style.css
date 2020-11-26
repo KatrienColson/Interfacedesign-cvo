@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Mukta+Malar:300,700");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+body {
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    font-size: 18px;
+    padding-top: 3em;
+}
+section {
+    padding: 12vh;
+    width: 80%;
+    max-width: 960px;
+    margin: 0 auto;
+    box-shadow: 0 0.5em 2em rgba(0, 0, 0, 0.3);
+    margin-bottom: 3em;
+}
+/*plaats de afbeelding in de rechterbovenhoek mits gebruik van float en geef wat marge zodanig dat de tekst er mooi omheen vloeit*/
+.float-intro img {
+    float: right;
+    margin-left: 1em;
+}
+.float-multiple {
+    min-height: 100vh;
+}
+/*float de 5 boxes zoals in het voorbeeld*/
+.float-multiple .float {
+    height: 150px;
+    width: 150px;
+    background: #ffbfcb;
+    border: 2px solid #f00;
+    float: left;
+}
+.float-layout-one {
+    background: #a9e5bb;
+}
+/*maak 3 kolommen van dezelfde breedte en zorg voor wat marge zoals in het voorbeeld*/
+.float-layout-one .col {
+    width: 30%;
+    margin-right: 3%;
+    float: left;
+}
+.sidebar {
+    background: #4d7C8a;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 1em;
+}
+.main {
+    background: #e4fde1;
+    color: #333;
+    padding: 1em;
+}
+footer {
+    background: #476A6f;
+    color: #fff;
+    padding: 1em;
+}
+/*geef de sidebars 1/4 van de ruimte en het main gedeelte de helft en zorg dat de footer onderaan komt*/
+.float-layout-two .sidebar--left {
+    float: left;
+    width: 20%;
+}
+.float-layout-two .main {
+    float: left;
+    width: 60%;   
+}
+.float-layout-two .sidebar--right {
+    float: left;
+    width: 20%;
+}
+.float-layout-two footer {
+    float:left;
+    width: 100%;
+}
+.float-layout-three {
+    background: #e4fde1;
+    min-height: 100vh;
+}
+.card {
+    margin: 1.5%;
+    width: 30%;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #000;
+}
+.card img {
+    max-width: 100%;
+}
+.card p {
+    padding: .5em;
+    margin: 0;
+}
+/*positioneer de cards anders dan in voorbeeld d.m.v. floating*/
+.float-layout-three .card {
+    float: left;
+}
+
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Katrien" />
+    <meta name="keywords" content="project name, sectioneren, float, clearfix" />
+    <meta name="description" content="oefening over float, clearfix,..."/>
+	<link rel="stylesheet" type="text/css" href="">
+    <title>Pagina layout</title>
+
+    <style>
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+     
+    }
+
+   /* .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }*/
+    .box1{
+        position: static;
+        background-color: coral;
+    }
+    .box2{
+        position: relative;
+        top: 20px;
+        left: -40px;
+        background-color: blue;
+    }
+    .box3{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+        background-color: lightgreen;
+    }
+    .box4{
+    position: relative;
+    background-color: pink;
+    }
+    .box4a{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+    }
+
+    .box5{
+    position: relative;
+    background-color: lightyellow;
+    }
+    .box5a{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+    }
+    .box5b{
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 200px;
+    }
+
+    .box6{
+    position: relative;
+    height: 250px;
+    background-color: lightblue;
+    ;
+    }
+    .box6a{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+    }
+    .box6b{
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 200px;
+    }
+
+    .box7a{
+        float: left;
+        width: 200px;
+        background-color: rgb(133, 108, 108);
+    }
+
+
+    .befor10 h1 {
+        position: fixed;
+        top: 50px;
+        right: 50px;
+        color: red;
+    }
+
+
+
+
+
+    </style>
+</head>
+<!-- -----------Home pagina---------------- -->
+<h1>barelyFitz Designs web-standard solutions for a non-standard world</h1>
+<h2>learn css positioning in ten steps</h2>
+<body>
+    <div class="before1">Position: static</div>
+        <div class="box1">
+            <div class="box1a"></div>
+            <div class="box1b"></div>
+            <div class="box1c"></div>
+        </div>
+    <div class="after1"></div>
+
+
+    <div class="before2">Position: relative</div>
+        <div class="box2">
+            <div class="box2a"></div>
+            <div class="3"></div>
+            <div class="box2c"></div>
+        </div>
+    <div class="after2"></div>
+
+
+    <div class="before3">Position: absolute</div>
+        <div class="box3">
+            <div class="box3a"></div>
+            <div class="box3b"></div>
+            <div class="box3c"></div>
+        </div>
+    <div class="after3"></div>
+
+
+ <div class="before4">Position: combinatie van relative en absolute</div>
+        <div class="box4">
+            <div class="box4a"></div>
+            <div class="box4b"></div>
+            <div class="box4c"></div>
+        </div>
+    <div class="after4"></div>
+
+    <div class="before5">Position: 2 column absolute</div>
+        <div class="box5">
+            <div class="box5a"></div>
+            <div class="box5b"></div>
+            <div class="box5c"></div>
+        </div>
+    <div class="after5"></div>
+
+    <div class="before6">Position: 2 column absolute height</div>
+    <div class="box6">
+        <div class="box6a"></div>
+        <div class="box6b"></div>
+        <div class="box6c"></div>
+    </div>
+<div class="after6"></div>
+
+<div class="before7">Position: float</div>
+<div class="box7">
+    <div class="box7a"></div>
+    <div class="box7b"></div>
+    <div class="box7c"></div>
+</div>
+<div class="after7"></div>
+
+
+
+
+<div class="befor10">Position: Fixed 
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+</div>
+</body>
+
+</html>

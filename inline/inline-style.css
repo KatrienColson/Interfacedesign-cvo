@@ -1,0 +1,25 @@
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: blue;
+  padding: 25px;
+  background-color: black;
+}
+h2 {
+  margin: 25px;
+}
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: yellow;
+}
+* {
+  border: 1px solid blue;
+}
+/*foto's onder elkaar*/
+img {
+  display: block;
+}
+/*de ik naast elkaar*/
+li {
+  display: inline-block;
+}
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Boxes-FLOAT</title>
+    <style>
+/*geef een float altijd een achtergrond bij het bouwen*/
+    .parent {
+        background: red;
+        width: 300px;
+        margin: 3em auto;
+        padding: 20px;
+    }
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .box {
+        height: 100px;
+        width: 100px;
+        color: white;
+        float: left;
+    }
+    .box1 {
+        background: blue;
+    }
+    .box2{
+        background: purple;
+    }
+    .box3 {
+        background: plum;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="parent clearfix">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+</body>
+
+</html>
