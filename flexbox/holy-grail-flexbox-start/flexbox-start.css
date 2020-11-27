@@ -1,48 +1,60 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 h1,
 h2 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-.container>* {
-    padding: 20px;
+.container > * {
+  padding: 20px;
 }
 
 .container {
-    color: white;
-    font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 header {
-    background: skyblue;
+  background: skyblue;
+  order: -1;
+  flex: 1 0 100%;
 }
 
 main {
-    background: slategray;
+  background: slategray;
+  order: 0;
+  flex: 1 0 50%;
 }
 
 nav {
-    background: cadetblue;
+  background: cadetblue;
+  order: -1;
+  flex: 1 0 25%;
 }
 
 aside {
-    background: seagreen;
+  background: seagreen;
+  order: 0;
+  flex: 1 0 25%;
 }
 
 footer {
-    background: darkslateblue;
+  background: darkslateblue;
+  order: 1;
+  flex: 1 0 100%;
 }

@@ -1,0 +1,165 @@
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Comfortaa", cursive;
+  color: #fff;
+}
+
+a::before {
+  content: "\01F981  ";
+}
+
+a:link {
+  font-size: 2rem;
+  color: #e28300;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 500ms;
+}
+
+a:visited {
+  color: #e28300;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #000;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 3em auto;
+  background-color: #fff;
+}
+
+article {
+  text-align: center;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+img {
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* we maken een grid systeem met flexbox - mobile first*/
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+[class*="col-"] {
+  flex: 0 0 100%;
+  margin: 1em 0;
+  padding: 0.8em 0.5em;
+}
+
+.col-1a,
+.col-1b {
+  background-color: #babbbf;
+  color: #000;
+}
+
+.col-2a,
+.col-2b {
+  background-color: #8c6746;
+}
+
+.col-3 {
+  background-color: #403328;
+}
+
+.col-4 {
+  background-color: #735f4d;
+}
+
+/*cats-medium.png*/
+@media only screen and (min-width: 480px) {
+  /* .wrapper {
+    width: 100%;
+    max-width: 1280px;
+    margin: 3em 0;
+    background-color: #fff;
+  }*/
+  .row {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 0 100%;
+  }
+  /* [class*="col-"] {
+    flex: 0 0 100%;
+    margin: 1em 0;
+    padding: 0.8em 0em;
+  }*/
+  .col-1a,
+  .col-2a {
+    flex: 1 0 45%;
+    flex-shrink: -1;
+  }
+
+  .col-1b,
+  .col-3,
+  .col-4,
+  .col-2b {
+    flex: 1 0 100%;
+  }
+}
+
+/*cats-large.png*/
+@media only screen and (min-width: 768px) {
+  .col-1a,
+  .col-1b {
+    flex: 1 0 20%;
+  }
+
+  .col-2a,
+  .col-2b {
+    flex: 1 0 40%;
+  }
+
+  .col-3 {
+    flex: 1 0 70%;
+  }
+
+  .col-4 {
+    flex-basis: 100%;
+  }
+
+  .order-first {
+    order: 1;
+  }
+
+  .order-second {
+    order: 2;
+  }
+
+  .order-third {
+    order: 3;
+  }
+
+  .order-fourth {
+    order: 4;
+  }
+}
