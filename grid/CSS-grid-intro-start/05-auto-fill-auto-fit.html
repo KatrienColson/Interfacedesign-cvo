@@ -21,6 +21,11 @@
     .container {
         border: 5px solid #333;
         border-radius: 5px;
+        display: grid;
+        /*grid-template-columns: repeat(auto-fill, 200px);*/
+        /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
     }
 
     .item {
@@ -36,9 +41,9 @@
     <div class="container">
         <div class="item">Een</div>
         <div class="item">Twee</div>
-        <div class="item">Drie heeft veel meer inhoud dan alle andere items.</div>
+        <!--<div class="item">Drie heeft veel meer inhoud dan alle andere items.</div>
         <div class="item">Twee</div>
-        <div class="item">Een</div>
+        <div class="item">Een</div>-->
     </div>
 </body>
 
