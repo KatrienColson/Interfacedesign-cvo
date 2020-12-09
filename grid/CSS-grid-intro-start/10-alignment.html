@@ -21,8 +21,17 @@
     .container {
         border: 5px solid #333;
         border-radius: 5px;
-        block-size: 600px;
-        inline-size: 740px;
+        block-size: 600px;/*vertikaal*/
+        inline-size: 740px;/*horizontaal*/
+        display:grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(3, 150px);
+        gap: 20px;
+        align-content: center;/*vertikaal*/
+        justify-content: center;
+        /*alles wat met Align- begint werken op de vertiale as */
+        /*justify- werken op de horizontale as*/
+        /*-content, zorgt voor de verdeling op de beschikbare ruimt als je grid niet de container helemaal opvuld*/
     }
 
     .container>* {

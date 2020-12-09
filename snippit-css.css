@@ -1,0 +1,57 @@
+/* Universal Box Sizing with Inheritance */
+html {
+    box-sizing: border-box;
+  
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /* bij gebruik van anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* mini-reset */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* facultatief */
+  body {
+    text-rendering: optimizeLegibility;/*zorgt dat je fonds altijd mooi gerenderd worden*/
+  
+    -webkit-hyphens: auto;/*dient voor dat je "nl site", zorgt ervoor dat je woorden correct worden afgebroken om responsief te erken */
+    -ms-hyphens: auto;
+    hyphens: auto;
+  
+    /* for dark backgrounds */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* clearfix */
+  .cf:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* img & video responsive */
+  img,
+  video {
+    display: block;/*als je img langs elkaar wil, kan je dit weg halen*/
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* hor & ver centreren met flexbox */
+  .parent-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
