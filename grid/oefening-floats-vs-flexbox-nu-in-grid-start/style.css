@@ -61,16 +61,25 @@ footer {
 /*GRID*/
 /*Gebruik grid om de 6 cards over 2 rijen te verspreiden - zorg ook voor responsiviteit*/
 .grid-layout-one .card {
+   width: 100%;
 }
 
 .grid-layout-one .grid-parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));/*alle kolommen even breedt en automatizch verdelen over beschikbare ruimte*/
+    gap: 1em;
 }
 /*Gebruik grid om de sidebars links en rechts van de main content te plaatsen en de footer onderaan*/
 .grid-layout-two {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
 .grid-layout-two .title {
+    grid-column: 1 / -1;
+    border: 1px solid black;
 }
 
 .grid-layout-two footer {
+    grid-column: 1 / -1;
 }

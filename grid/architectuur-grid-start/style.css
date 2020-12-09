@@ -16,14 +16,18 @@ body {
 }
 
 main {
-
-    /*    kolommen min 300px, max 1fr, repeat & auto-fit
-    gap 2 rem*/
+    /*kolommen min 300px, max 1fr, repeat & auto-fit, gap 2 rem*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
 article {
-
     /*flex kolommen*/
+    display: flex;
+    flex-flow: column nowrap;
+    /*flex-direction: column;
+    flex-wrap: nowrep;*/
     background: white;
     padding: 2rem;
 }
@@ -38,10 +42,9 @@ p {
     margin: 0.6em 0 2rem;
 }
 
-img {
-
-    /*  order en align aanpassen*/
-
+img {       
+    /*order en align aanpassen*/
+    order: -1;
     width: 100%;
 }
 

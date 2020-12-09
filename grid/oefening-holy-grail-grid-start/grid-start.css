@@ -26,24 +26,37 @@ h2 {
 .container {
     color: white;
     font-family: Helvetica, Arial, sans-serif;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto) 300px;
+    grid-template-areas: 
+    "header header header header"/*. is leeg, hier kan je niks zetten*/
+    "nav main main aside"
+    "footer footer footer footer";
+
 }
 
 header {
     background: skyblue;
+    grid-area: header;
 }
 
 main {
     background: slategray;
+    grid-area: main;
 }
 
 nav {
     background: cadetblue;
+    grid-area: nav;
 }
 
 aside {
     background: seagreen;
+    grid-area: aside;
 }
 
 footer {
     background: darkslateblue;
+    grid-area: footer;
 }

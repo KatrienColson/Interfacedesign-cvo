@@ -21,17 +21,20 @@
     .container {
         border: 5px solid #333;
         border-radius: 5px;
-        block-size: 600px;/*vertikaal*/
-        inline-size: 740px;/*horizontaal*/
+        block-size: 600px;/*height:vertikaal*/
+        inline-size: 740px;/*width:horizontaal*/
         display:grid;
         grid-template-columns: repeat(3, 200px);
         grid-template-rows: repeat(3, 150px);
         gap: 20px;
+        /*place-content: center; is verkort*/
         align-content: center;/*vertikaal*/
         justify-content: center;
         /*alles wat met Align- begint werken op de vertiale as */
         /*justify- werken op de horizontale as*/
         /*-content, zorgt voor de verdeling op de beschikbare ruimt als je grid niet de container helemaal opvuld*/
+        /*-content gebruik je niet als je werkt met "fr"*/
+        /*justify-self of align-self plaats je op het item zelf, niet op de container*/
     }
 
     .container>* {
@@ -43,16 +46,27 @@
 
     .item1 {
         background-color: white;
-    }
+        grid-column: 1;
+        grid-row: 1 / 3;
+      }
 
-    .item2 {
+      .item2 {
         background-color: rgb(255, 105, 180);
         color: white;
-    }
+        grid-column: 2 / 4;
+        grid-row: 1 / 3;
+      }
 
-    .item3 {}
+      .item3 {
+        grid-column: 1;
+        grid-row: 3;
+      }
 
-    .item4 {}
+      .item4 {
+        grid-column: 2 / 4;
+        grid-row: 3;
+      }
+
     </style>
 </head>
 
