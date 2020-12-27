@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #333;
+    min-height: 100vh;
+    display: grid;
+    grid-gap: 1em;
+
+    /*definieer rows, columns, areas*/
+}
+
+header,
+nav,
+main,
+footer {
+    background-color: whitesmoke;
+    padding: 1em;
+}
+
+@media (min-width: 40em) {
+    body {
+
+        /*definieer rows, columns, areas*/
+
+    }
+}
+
+/*wijs grid areas toe*/
+header {}
+
+nav {}
+
+main {}
+
+footer {}
