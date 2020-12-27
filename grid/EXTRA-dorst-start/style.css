@@ -115,3 +115,9 @@ footer {
     text-align: center;
     font-size: .75rem;
 }
+.container {
+    /*kolommen min 300px, max 1fr, repeat & auto-fit, gap 2 rem*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
