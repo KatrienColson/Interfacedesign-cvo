@@ -25,12 +25,11 @@
         background-color: darkslateblue;
         position: relative;
         transition-property: background-color;
-        transition-duration: 3s;
+        transition-duration: 7s;
     }
     #skew .square:hover {
         background-color: crimson;
-        transform:skew(-20deg);
-        
+        transform:skew(-20deg);  
     }
     /* The scale() method */
     /* The scale() method */
@@ -46,12 +45,10 @@
         transition-property: background-color;
         transition: all 1.5s ease;
     }
-
     #scale .square div:hover {
         background-color: darkslateblue;
         transform:scale(2);
     }
-
     /* The rotate() method */
     /* The rotate() method */
     /* The rotate() method */
@@ -59,19 +56,25 @@
     #rotate .square {
         background-color: salmon;
         transition: all 10s ease;
+    }
+    #rotate .square:hover {
         transform: rotate(360deg); 
     }
-
-    #rotate .square:hover {}
-
+    /* The translate() method */
+    /* The translate() method */
     /* The translate() method */
     /*Verander de achtergrondkleur in forestgreen en verplaats het blokje 900px over de horizontale as en laat het langzaam rollen. Voeg twee verschillende geleidelijke overgangen toe - andere tijdsduur dus.*/
     #translate .square {
         background-color: darkorange;
-
+        transition-property: background-color;
+        transition: all 10s ease-in-out;
+       /* transition-duration: 13s, 10s;
+        transition-timing-function: ease-in;*/
     }
-
-    #translate .square:hover {}
+    #translate .square:hover {
+        background-color: forestgreen;
+        transform: translateX(900px);
+    }
     </style>
 </head>
 
