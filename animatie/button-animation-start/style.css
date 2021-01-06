@@ -1,26 +1,64 @@
 body {
     height: 100vh;
     font-family: Helvetica, Arial, sans-serif;
-    background-color: grey;
+    background-color:rgb(199, 112, 112);
 }
-
 .container {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;  
 }
 
 button.btn {
     background-color: transparent;
-    border: 1px solid black;
+    border: 1px solid grey;
+    color: grey;
     font-size: 1.5em;
     text-transform: uppercase;
     cursor: pointer;
+    margin-left: 200px;
+    padding: 10px 20px;
+    transition-property: background-color;
+    transition: all 800ms linear;
+}
+button.btn:first-child{
+    margin-left: 0;
 }
 
 /*btn-1*/
+.btn.btn-1{
+    color: white;
+    border: 1px solid white;
+}
+.btn.btn-1:hover{
+    background-color: white;
+    color:  rgb(221, 174, 174);
+    transform: skewX(-30deg);
+    filter: drop-shadow(5px 5px 4px lightgrey);
+}
 
 /*btn-2*/
+.btn.btn-2{
+    color: rgb(199, 112, 112);
+    background-color: white;
+    border: white;
+}
+.btn.btn-2:hover{
+    background-color: rgb(221, 174, 174);;
+    color: white;
+    border:1px solid rgb(221, 174, 174);;
+    transform:scale(2);
+}
 
 /*btn-3*/
+.btn.btn-3{
+    color: white;
+    border: 1px solid white;
+}
+.btn.btn-3:hover{
+    background-color: rgb(221, 174, 174);;
+    color:white;
+    transform: rotate(360deg);
+    }  
+}
