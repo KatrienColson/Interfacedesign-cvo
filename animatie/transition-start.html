@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions toepassen</title>
+    <style>
+    body {
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: 3em auto;
+    }
+
+    .box {
+        width: 150px;
+        height: 150px;
+        margin: 1rem 0 2rem 1rem;
+    }
+
+    /* Van blauw naar rood */
+    /* Van blauw naar rood */
+    /* Van blauw naar rood */
+    #square .box {
+        background-color: blue;
+        transition-property: background-color;
+        transition-duration: 3s;
+        transition-timing-function: ease-in;
+    }
+    #square .box:hover {
+        background-color: #f33;
+    }
+
+    /* Van vierkant naar rechthoek */
+    /* Van vierkant naar rechthoek */
+    /* Van vierkant naar rechthoek */
+    #rect .box {
+        background-color: tomato;
+        transition-property: background-color, width;
+        transition-duration: 5s;
+        transition-timing-function: ease-out;
+    }
+    #rect .box:hover {
+        background-color: pink;
+        width: 700px;
+    }
+
+    /* Van groen vierkant naar gele cirkel */
+    /* Van groen vierkant naar gele cirkel */
+    /* Van groen vierkant naar gele cirkel */
+    #circle .box {
+        background-color: green;
+        transition: all 1.5s 260ms;
+        filter: drop-shadow(30px 10px 4px lightgrey); 
+    }
+    #circle .box:hover {
+        background-color: rgb(209, 209, 74);
+        border-radius: 75px;
+        filter: drop-shadow(30px 10px 4px grey);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Transitions toepassen</h1>
+        <section id='square'>
+            <h2>Van blauw naar rood</h2>
+            <div class='box'>
+            </div>
+        </section>
+        <hr>
+        <section id='rect'>
+            <h2>Van vierkant naar rechthoek</h2>
+            <div class='box'>
+            </div>
+        </section>
+        <hr>
+        <section id='circle'>
+            <h2>Van groen vierkant naar gele cirkel</h2>
+            <div class='box'>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

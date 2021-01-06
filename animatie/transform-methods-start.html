@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D transforms met overgangen</title>
+    <style>
+    body {
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+    section,
+    h1 {
+        margin: 2rem 4rem;
+    }
+
+    /* The skew() method */
+    /*Verander de achtergrondkleur in crimson en trek -20 graden schuin over de horizontale as. Voeg een geleidelijke overgang toe.*/
+    .square {
+        width: 150px;
+        height: 150px;
+        background-color: darkslateblue;
+        position: relative;
+    }
+
+    #skew .square:hover {}
+
+    /* The scale() method */
+    /*Verander de achtergrondkleur in darkslateblue  en verdubbel de grootte. Voeg een geleidelijke overgang toe.*/
+    #scale .square div {
+        background-color: hotpink;
+        position: absolute;
+        left: 25%;
+        top: 25%;
+        width: 75px;
+        height: 75px;
+    }
+
+    #scale .square div:hover {}
+
+    /* The rotate() method */
+    /*Laat het blokje volledig om z'n as draaien. Voeg een geleidelijke overgang toe.*/
+    #rotate .square {
+        background-color: salmon;
+    }
+
+    #rotate .square:hover {}
+
+    /* The translate() method */
+    /*Verander de achtergrondkleur in forestgreen en verplaats het blokje 900px over de horizontale as en laat het langzaam rollen. Voeg twee verschillende geleidelijke overgangen toe - andere tijdsduur dus.*/
+    #translate .square {
+        background-color: darkorange;
+
+    }
+
+    #translate .square:hover {}
+    </style>
+</head>
+
+<body>
+    <h1>2D Transforms, transitioned</h1>
+    <br>
+    <!-- The skew() method  -->
+    <section id='skew'>
+        <h3>The skew() method</h3>
+        <p>skews an element along the X and/or Y-axis by the given angle.</p>
+        <div class='square'>
+        </div>
+        <hr>
+    </section>
+    <!-- The scale() method -->
+    <section id='scale'>
+        <h3>The scale() method</h3>
+        <p>increases or decreases the size of an element.</p>
+        <div class='square'>
+            <div></div>
+        </div>
+        <hr>
+    </section>
+    <!-- The rotate() method -->
+    <section id='rotate'>
+        <h3>The rotate() method</h3>
+        <p>rotates an element clockwise or counter-clockwise according to a given degree.</p>
+        <div class='square'>
+        </div>
+        <hr>
+    </section>
+    <!-- The translate() method  -->
+    <section id='translate'>
+        <h3>The translate() method</h3>
+        <p>moves an element from its current position.</p>
+        <div class='square'>
+        </div>
+        <hr>
+    </section>
+</body>
+
+</html>

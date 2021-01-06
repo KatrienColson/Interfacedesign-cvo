@@ -1,0 +1,78 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+}
+
+div {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5em 2em;
+}
+
+h1 {
+    grid-column: 1 / -1;
+}
+
+img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    max-width: 100%;
+    height: auto;
+}
+
+.grayscale {
+    filter: grayscale(1);
+}
+
+.brightness {
+    filter: brightness(5);
+}
+
+.contrast {
+    filter: contrast(5);
+}
+
+.saturate {
+    filter: saturate(4);
+}
+
+.sepia {
+    filter:sepia(100%);
+}
+
+.hue-rotate {
+    filter:hue-rotate(360deg);
+}
+
+.invert {
+    filter:invert(100%);
+}
+
+.opacity {
+    filter: opacity(50%);
+}
+
+.drop-shadow {
+    filter: drop-shadow(16px 16px 20px red);
+}
+
+.blur {
+    filter: blur(1rem);
+}
+
+.multiple {
+    /*minimum 3 filters - experimenteer met de volgorde*/
+    filter: saturate(1.6) brightness(1) contrast(2) invert(0.94) hue-rotate(103deg);
+  
+}
+.multiple:hover{
+    filter: saturate(5);
+}
