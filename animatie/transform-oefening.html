@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+    <style>
+    .container {
+        margin-top: 180px;
+        text-align: center
+    }
+
+    .square {
+        display: inline-block;
+        background-color: #00A896;
+        border-radius: 5px;
+        height: 100px;
+        width: 100px;
+        margin: 0 40px;
+        transition: transform 300ms linear;
+    }
+
+    .square1:hover {
+        transform: scale(2) translateX(50px) ;
+        transform: rotate(90deg);
+        transform: skewX(-10deg);
+    }
+
+    .square2:hover {
+        transform: scale(0.5) translate(-20px, -20px );
+        transform: rotate(1000deg);
+        transform: skewY(-20deg);
+    }
+
+    .square3:hover {
+        transform: scaleX(2) translateY(100%);
+        /*transform: scale(2,0);*/
+        transform: rotate(-30deg);
+        transform: skew(25deg, 10deg);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="square square1"></div>
+        <div class="square square2"></div>
+        <div class="square square3"></div>
+    </div>
+</body>
+
+</html>

@@ -22,9 +22,15 @@
         height: 150px;
         background-color: darkslateblue;
         position: relative;
+        transition-property: background-color;
+        transition-duration: 3s;
     }
 
-    #skew .square:hover {}
+    #skew .square:hover {
+        background-color: crimson;
+        transform:skew(-20deg);
+        
+    }
 
     /* The scale() method */
     /*Verander de achtergrondkleur in darkslateblue  en verdubbel de grootte. Voeg een geleidelijke overgang toe.*/
@@ -35,9 +41,15 @@
         top: 25%;
         width: 75px;
         height: 75px;
+        transition-property: background-color;
+        transition-duration: 5s;
+        transition-timing-function: ease;
     }
 
-    #scale .square div:hover {}
+    #scale .square div:hover {
+        background-color: darkslateblue;
+        transform:scale(2,2);
+    }
 
     /* The rotate() method */
     /*Laat het blokje volledig om z'n as draaien. Voeg een geleidelijke overgang toe.*/
