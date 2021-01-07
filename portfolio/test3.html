@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test 3</title>
+</head>
+<style>
+    /*https://codepen.io/alphardex/pen/BayEGXB*/
+    @import url(https://fonts.googleapis.com/css?family=Lato);
+
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1A1E23;
+    }
+    .blink-text-menu {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    }
+    .blink-text-menu li a{
+      position: relative;
+      display: flex;
+      padding: 6px;
+      color: white;
+      font-family: Lato, sans-serif;
+      text-decoration: none;
+    }
+    .blink-text-menu span {
+        position: relative;
+        overflow: hidden;
+        transition: 0.6s;
+    }
+    .blink-text-menu .out {
+        display: inline-flex;
+    }
+    .blink-text-menu .in {
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    .blink-text-menu:hover span .out {
+            opacity: 0;
+            transform: translateX(-100%);
+    }
+        
+    .blink-text-menu:hover span .in {
+            opacity: 1;
+            transform: translateX(0);
+    }
+ 
+
+</style>
+<body>
+    <ul class="blink-text-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Archives</a></li>
+        <li><a href="#">Tags</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+
+<script>
+let blinkTextMenuLinks = document.querySelectorAll(".blink-text-menu li a");
+blinkTextMenuLinks.forEach(link => {
+  let letters = link.textContent.split("");
+  link.textContent = "";
+  letters.forEach((letter, i) => {
+    i += 1;
+    let span = document.createElement("span");
+    let delay = i / 20;
+    if (i % 2 === 0) {
+      delay -= 0.1;
+    } else {
+      delay += 0.05;
+    }
+    let letterOut = document.createElement("span");
+    letterOut.textContent = letter;
+    letterOut.style.transitionDelay = `${delay}s`;
+    letterOut.classList.add("out");
+    span.append(letterOut);
+    let letterIn = document.createElement("span");
+    letterIn.textContent = letter;
+    letterIn.style.transitionDelay = `${delay}s`;
+    letterIn.classList.add("in");
+    span.append(letterIn);
+    link.append(span);
+  });
+});
+
+
+</script>
+</body>
+</html>
