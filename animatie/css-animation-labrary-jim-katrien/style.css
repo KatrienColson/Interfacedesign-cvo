@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+body{
+    margin: 0;
+    padding:0;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    text-shadow: 2px 2px 2px  rgb(80, 80, 80);
+    background-color: #181a1b;
+}
+.header{
+    padding-top: 25px;
+}
+.header h1{
+    text-align: center;
+    font-weight: 300;
+}
+.header p{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 300;
+    color: grey;
+}
+.container{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.obj{
+    flex-basis: 150px;
+    margin: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.obj1{
+background-color: cornflowerblue;
+height: 150px;
+width: 150px;
+animation: flash 0.5s linear infinite;
+animation-play-state: paused;
+}
+.obj1:hover{
+    animation-play-state: running;
+}
+.obj2{
+    background-color: crimson;
+    height: 150px;
+    width: 150px;
+    animation: rubberBand 0.8s linear infinite;
+    animation-play-state: paused;
+}
+.obj2:hover{
+    animation-play-state: running;
+}
+.obj3{
+    background-color: darkgreen;
+    height: 150px;
+    width: 150px;
+    animation: swing 1s linear infinite;
+    animation-play-state: paused;
+}
+.obj3:hover{
+    animation-play-state: running;
+}
+.obj4{
+    background-color: blue;
+    height: 150px;
+    width: 150px;
+    animation: wobble 1s linear infinite;
+    animation-play-state: paused;
+}
+.obj4:hover{
+    animation-play-state: running;
+}
+.obj5{
+    background-color: goldenrod;
+    height: 150px;
+    width: 150px;
+    animation: shakeY 1s linear infinite;
+    animation-play-state: paused;
+}
+.obj5:hover{
+    animation-play-state: running;
+}

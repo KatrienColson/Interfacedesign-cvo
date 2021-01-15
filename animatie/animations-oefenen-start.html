@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe animations oefenen</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+/*https://codepen.io/rachelnabors/full/XbYGqR/
+*/
+    body,
+    html {
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #555;
+        font-family: 'Fredoka One', cursive;
+        color: pink;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .animated-thing {/*best in deze volgorde noteren*/
+        animation-name: black-to-white;/*naam gegeven => deze altijd vermelden*/
+        animation-duration: 1s;/*hoe lang moet het duren => deze altijd vermelden*/
+        animation-timing-function: linear; /* deze is de snelheid dt hij begint tot het einde (hier is de tijd van begin tot einde hetzelfde */
+        animation-delay: 2s;/*hier duurt het 2sec voor de annimatie start*/
+        animation-iteration-count: 1; /*hoeveel keer wil ik de uitvoering herhalen*/
+    /*animation-direction: normal, alternate-reverse, alternate, reverse*/
+        animation-direction: normal;/*volgorde kleur begint andersom, begint bij wit en eindigd op zwart*/
+        animation-fill-mode: forwards ;/* standaard is Backwards, forwards, both... zorgt ervoor dat als je op 100%bent gekomen, dat onze animatie terug springt naar Pre-animatie, terug naar het begin zonder animatie*/
+        animation-play-state: running;/*standaard altijd running of paused*/
+    }
+    /*korte notatie:
+    animation: black-to-white 1s Linear 2s 1 normal forwards running;
+    de standaard notaties hoef je niet te vermelden, dus: animation:  black-to-white 1s Linear 2s 1 forwards;*/
+
+/*je kan ook binnnen een keyframe een eigenschap aanpassen*/
+    @keyframes black-to-white{
+        0%{
+            background: #000; /*begint op zwart*/
+            color: #fff;
+        }
+        100%{
+            background: #fff; /*als hij afgelopen is eindigd hij op zwart*/
+            color: #000;
+        }
+    }
+   
+
+
+   
+ /*animation-timing-function:
+linear	The animation has the same speed from start to end	
+ease	Default value. The animation has a slow start, then fast, before it ends slowly	
+ease-in	The animation has a slow start	
+ease-out	The animation has a slow end	
+ease-in-out	The animation has both a slow start and a slow end	
+step-start	Equivalent to steps(1, start)	
+step-end	Equivalent to steps(1, end)	
+steps(int,start|end)	Specifies a stepping function, with two parameters. The first parameter specifies the number of intervals in the function. It must be a positive integer (greater than 0). The second parameter, which is optional, is either the value "start" or "end", and specifies the point at which the change of values occur within the interval. If the second parameter is omitted, it is given the value "end"	
+cubic-bezier(n,n,n,n)	Define your own values in the cubic-bezier function
+Possible values are numeric values from 0 to 1	
+initial	Sets this property to its default value. Read about initial	
+inherit	Inherits this property from its parent element. Read about inherit*/
+    </style>
+</head>
+
+<body class="animated-thing">
+    <div>
+        <h1>Static content is boring!</h1>
+    </div>
+</body>
+
+</html>
