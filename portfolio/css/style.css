@@ -1,12 +1,17 @@
 /*HEADER*/
 /*HEADER*/
 /*HEADER*/
+.col-2-nav{
+    text-align: center;
+    padding-top: 18.75rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
 .col-2-blok{
     height: 95vh;
     width:50%;
-    background-color: #394a56;
+    background-color: var(--black);
 }
-
 .blok-text{
     color: var(--white);
     writing-mode: vertical-lr;
@@ -15,6 +20,9 @@
     top: 30px;
     font-size: 6rem;
     font-family: 'Lobster Two', cursive;
+}
+span.uitroep{
+    color: yellow;
 }
 /* MAIN */
 /* MAIN */
@@ -28,7 +36,6 @@
     left: 480px;
     top: 30px;
     font-size: 3rem;
-    
 }
 /*kolom 2, foto en tekst*/
 figure {
@@ -39,19 +46,19 @@ figure {
     box-sizing: border-box;
     display: inline-block;
     margin: 0 auto;
-    background-color: rgba(230, 230, 230, 0.7);
+    background-color: var(--white);
     color: var(--white);
     transition: all 0.80s ease;
     overflow: hidden;
     backface-visibility: hidden;
-    box-shadow: 3px 2px 24px 0px var(--grey);
+    /* box-shadow: 3px 2px 24px 0px var(--grey); */
 }
 figure figcaption {
     transform: translateX(-120%);
     background-color:var(--black);
     width: 341px;
     height: 506px;
-    padding: 100px 20px 50px 20px;
+    padding: 6.25rem 1.25rem 3.12rem 1.25rem;
     position: absolute;
     /* top: 0px;
     bottom: 15px;
@@ -65,13 +72,10 @@ figure:hover figcaption {
     transform: translate(0, 0);
 }
 /*kolom 3, quote*/
-
 .extra {
     padding: 6em 2em 0em 2em;
     position:relative;
 }
-
-
 
 /* SECTION 1 */
 /* SECTION 1 */
@@ -80,24 +84,86 @@ figure:hover figcaption {
 
 }
 
-
 /* SECTION 2 */
 /* SECTION 2 */
 /* SECTION 2 */
-.col-4-section2{
-    text-align: center;
-}
-.col-4-section2 h5{
-    text-transform: uppercase;
-}
 .titel-hoofding-kennis{
     color: var(--black);
     writing-mode: vertical-lr;
     text-orientation: mixed;
     top: 30px;
     font-size: 3rem;
+    padding-left: 9.5rem;
+    padding-top: 0.9em;
+    padding-right: 0;
+    margin-right: 0;
 }
-
+/*SECTION 2: WRAPPER GALLERIJ*/
+/*SECTION 2: WRAPPER GALLERIJ*/
+/*SECTION 2: WRAPPER GALLERIJ*/
+.wrapper {
+    width: 95%; 
+}
+div.gallery ul {
+    list-style-type: none;
+    margin-left: 1.44rem;
+}
+/* animation */
+div.gallery ul li, div.gallery li img {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+div.gallery ul li {
+    position: relative;
+    float: left;
+    width: 220px;
+    height: 220px;
+    margin: 0.3rem;
+    padding: 0.3rem;
+    z-index: 0;
+}
+div.gallery ul li:hover {
+    z-index: 5;
+}
+div.gallery ul li img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid var(--grey);
+    padding: 0.3rem;
+    width: 220px;
+    height: 220px;
+    background: var(--background);
+}
+div.gallery ul li img:hover {
+    width: 220px;
+    height: 220px;
+    margin-top: -6.25rem;
+    margin-left: -8.44rem;
+    top: 65%;
+    left: 65%;
+}
+span.foto-titel{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+  /* Responsive hack */
+@media only screen and (min-width: 499px) and (max-width: 1212px) {
+    .wrapper {
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 498px) {
+    .wrapper {
+        width: 300px;
+    }
+    div.gallery ul {
+        list-style-type: none;
+        margin: 0;
+    }
+} 
 
 /* FOOTER */
 /* FOOTER */
@@ -105,8 +171,9 @@ figure:hover figcaption {
 footer{
     background-color: var(--black);
     height: 100px;
-
-    
+    padding-top: 1.8rem;
+	text-align: center; 
+	color: var(--white);
 }
 
 
