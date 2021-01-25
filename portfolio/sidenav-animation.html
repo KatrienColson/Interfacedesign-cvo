@@ -9,6 +9,7 @@
 		<link rel="icon" href="./img/logo.ico" type="image/x-icon" />		
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="fa/css/font-awesome.min.css">
 <!--img: https://www.freeimages.com/nl/photo/butterfly-dress-1520606-->
 		<title>Portfolio Katr!en</title><!--https://www.pinterest.com/pin/531706299763222088/-->
 <style>
@@ -65,6 +66,8 @@ body {
     .sidenav {padding-top: 0.938rem;}
     .sidenav a {font-size: 1rem;}
 }
+
+
 </style>
 </head>
 <body>
@@ -73,10 +76,10 @@ body {
 <!-- NAVIGATIE -->
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">About me</a>
-    <a href="#">Test 1</a>
-    <a href="#">Test 2</a>
-    <a href="#">Contact</a>
+    <a href="#about-anchor">About me</a>
+    <a href="#cv-anchor">Curriculum Vitae</a>
+    <a href="#kennis-anchor">Kennis</a>
+    <a href="#contact-anchor">Contact</a>
 </div>
 <!-- HEADER -->
 <!-- HEADER -->
@@ -100,7 +103,7 @@ body {
 <!-- MAIN -->
 <!-- MAIN -->
 <!-- MAIN -->
-    <main>
+    <main id="about-anchor">
         <div class="container-main">
             <div class="row">
                 <div class="col-3">
@@ -108,13 +111,26 @@ body {
                 </div>
                 <div class="col-3">
                         <figure>
-                            <figcaption>  
-                                Ik ben een sociaal en creatief iemand met een groot verantwoordelijkheidsgevoel. Doordat ik stevig in mijn schoenen sta, weet ik mij uitstekend te redden in stressvolle situaties. Graag werk ik in een groep waar teamspirit hoog in het vaandel wordt gedragen en waar het wederzijdse leerproces nooit stil staat. Ik vind nieuwe professionele uitdagingen altijd zeer interessant en doe graag nieuwe kennis op, werk efficiënt zelfstandig en ben van mening dat overleg met collega's alleen maar bijdraagt om tot een degelijk resultaat te komen tegen de beoogde deadline.
-                            </figcaption>
+                            <p class="figcaption">  
+                                &#34Ik ben een doorzetter,<br> die af en toe ook niet<br> meer weet wat te doen,<br> maar toch ga ik ervoor.&#34
+                            </p>
                         </figure>
                 </div>
                 <div class="col-3">
-                    <p class="extra">&#34Ik ben een doorzetter,<br> die af en toe ook niet<br> meer weet wat te doen,<br> maar toch ga ik ervoor.&#34</p>
+                    <div class="extra">
+                        <p>
+                        Ik ben een sociaal en creatief iemand met een groot verantwoordelijkheidsgevoel. 
+                        Doordat ik stevig in mijn schoenen sta, weet ik mij uitstekend te redden in stressvolle 
+                        <br>
+                        <br>
+                        Graag werk ik in een groep waar teamspirit hoog in het vaandel wordt gedragen en waar het wederzijdse 
+                        leerproces nooit stil staat. 
+                        <br>
+                        <br>
+                        Ik vind nieuwe professionele uitdagingen altijd zeer interessant en doe graag nieuwe kennis op, 
+                        werk efficiënt zelfstandig en ben van mening dat overleg met collega's alleen maar bijdraagt om tot een degelijk 
+                        resultaat te komen tegen de beoogde deadline.
+                    </p>
                 </div>
             </div>
         </div>
@@ -122,21 +138,19 @@ body {
 <!-- SECTION 1 -->
 <!-- SECTION 1 -->
 <!-- SECTION 1 -->
-    <section>
+    <section id="cv-anchor">
         <div class="container-section-1">
-            <p class="contact-hoofding">Contactgegevens</p>
-
-            <div class="row">
+            <div class="row row-section1">
             <div class="col-2 col-2-section1">
-                
-                <p>SECTION 1: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit unde perspiciatis autem vero quidem vitae culpa
-                    molestias necessitatibus expedita maiores quis, ipsum blanditiis provident officiis minima laudantium odio atque minus 
-                    iure eos beatae id modi ea. Rerum, nam voluptatum!</p>
+                <p class="contact-section1-hoofding">Curriculum Vitae</p>
+                    <img src="img/cv-katrien.jpg" alt="foto-cv">
+                    <p><span class="miniatuur">download op naam!</span><a href ="img/CV-KatrienColson-2021.pdf" alt="cv" target="_blank" width="2480px" height="3508px"> Katr!en.com</a></p>
             </div>
             <div class="col-2 col-2-section1">
-                <p>SECTION 1: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae fugit unde perspiciatis autem vero quidem vitae culpa
-                    molestias necessitatibus expedita maiores quis, ipsum blanditiis provident officiis minima laudantium odio atque minus 
-                    iure eos beatae id modi ea. Rerum, nam voluptatum!</p>
+                <p class="contact-section1-hoofding">Hobby's</p>
+                <p><i class="fa fa-calendar"></i> Vooral in beweging blijven, fitness, wandelen</p>
+                <p><i class="fas fa-utensil-spoon"></i> Kookouder Klj</p>
+                <p><i class="fa fa-book"></i> Lezen</p>
                 </div>
             </div>
         </div>
@@ -144,19 +158,20 @@ body {
 <!-- SECTION 2 -->
 <!-- SECTION 2 -->
 <!-- SECTION 2 -->
-    <section>
-        <div class="container-section-2">
+    <section id="kennis-anchor">
+
+    <div class="container-section-2">
             <div class="row">
                 <div class="col-1 col-1-section2">
                     <div class="wrapper">
                         <div class="gallery">
                         <ul>
-                        <p>html & css</p><li><span class="foto-titel">html & css</span><img src="img/html.jpg" alt="html"></li>
-                        <p>javascript</p><li><span class="foto-titel">javascript</span><img src="img/javascript-klein.jpg" alt="javascript"></li>
-                        <p>php</p><li><span class="foto-titel">php</span><img src="img/php-klein.jpg" alt="php"></li>
-                        <li><span class="foto-titel">scss</span><img src="img/scss-klein.jpg" alt="scss"></li>
-                        <li><span class="foto-titel">drupal</span><img src="img/drupal-klein.jpg" alt="drupal"></li> 
-                        <li><span class="foto-titel">photoshop</span><img src="img/photoshop-klein.jpg" alt="photoshop"></li>
+                        <li><a href="https://www.google.com" target="_blank"><span class="foto-titel">html & css</span><img src="img/html.jpg" alt="html"></a></li>
+                        <li><a href="https://katriencolson.github.io/learning-front-end/2.mastering-javascript/3.snake/index.html" target="_blank"><span class="foto-titel">javascript</span><img src="img/javascript-klein.jpg" alt="javascript"></a></li>
+                        <li><a href="https://www.google.com" target="_blank"><span class="foto-titel">php</span><img src="img/php-klein.jpg" alt="php"></a></li>
+                        <li><a href="https://www.google.com" target="_blank"><span class="foto-titel">scss</span><img src="img/scss-klein.jpg" alt="scss"></a></li>
+                        <li><a href="https://www.google.com" target="_blank"><span class="foto-titel">drupal</span><img src="img/drupal-klein.jpg" alt="drupal"></a></li> 
+                        <li><a href="https://www.google.com" target="_blank"><span class="foto-titel">photoshop</span><img src="img/photoshop-klein.jpg" alt="photoshop"></a></li>
                         <div class="titel-hoofding-kennis">Kennis</div>
                         </ul>
                         </div>
@@ -164,13 +179,16 @@ body {
                 </div>  
             </div>              
         </div>
-    </section>
+        </section>
 </div><!--einde van container-all-->
 <!-- FOOTER -->
 <!-- FOOTER -->
 <!-- FOOTER -->
-    <footer>
-            <p>Portfolio Katr!en 	&copy; </p>
+    <footer id="contact-anchor">
+        <address>
+            <a href="mailto:katrien.colson@gmail.com">katrien.colson@gmail.com</a>  &#124;  
+            <a href="tel:003289979204">+32 (0)472 66 55 44</a>
+        </address>
     </footer>
 <!--JAVASCRIPT-->
 <!--JAVASCRIPT-->

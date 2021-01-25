@@ -47,7 +47,7 @@ span.uitroep{
 /*kolom 2, foto en tekst*/
 figure {
     position: relative;
-    background: url(../img/klok-time-for-change.jpg);
+    background: url(../img/grote-foto/klok-time-for-change.jpg);
     width: 345px;
     height: 506px;
     box-sizing: border-box;
@@ -60,27 +60,25 @@ figure {
     backface-visibility: hidden;
     /* box-shadow: 3px 2px 24px 0px var(--grey); */
 }
-figure figcaption {
+
+figure p.figcaption {
     transform: translateX(-120%);
     background-color: var(--black);
     width: 345px;
     height: 506px;
-    padding: 6.25rem 1.25rem 3.12rem 1.25rem;
+    margin-top: 0;
+    padding: 13rem 0rem 0rem 5.5rem;
     position: absolute;
-    /* top: 0px;
-    bottom: 15px;
-    left: 0px;
-    right: 0px; */
-    border: 4px solid var(--black);
     transition: all 1.5s ease;
 }
-figure:hover figcaption {
+figure:hover p.figcaption {
     transition: all 1s ease;
     transform: translate(0, 0);
+    color: var(--white);
 }
 /*kolom 3, quote*/
-p.extra {
-    padding: 9em 0em 0em 5.5em;
+.extra {
+    padding: 3em 2em 0em 2em;
     position:relative;
     color: var(--white);
 }
@@ -91,10 +89,18 @@ p.extra {
 .col-2-section1{
 
 }
-.contact-hoofding{
+.row-section1{
+    border: 1px solid var(--grey);
+    padding-bottom: 2rem;
+}
+.contact-section1-hoofding{
     color: var(--black);
     padding: 0rem 1.563rem;
     font-size: 3rem;
+    padding-left:0;
+}
+.miniatuur{
+    font-size: 0.5rem;
 }
 
 /* SECTION 2 */
@@ -148,8 +154,8 @@ div.gallery ul li img {
     padding: 0.3rem;
     width: 220px;
     height: 220px;
-    background: var(--background);
 }
+
 div.gallery ul li img:hover {
     width: 220px;
     height: 220px;
@@ -183,10 +189,13 @@ span.foto-titel{
 /* FOOTER */
 footer{
     background-color: var(--black);
-    height: 100px;
-    padding-top: 1.8rem;
+    padding: 1.8rem 0rem;
 	text-align: center; 
 	color: var(--white);
+}
+address a{
+color: white;
+
 }
 
 

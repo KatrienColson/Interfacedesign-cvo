@@ -170,89 +170,55 @@ img {
     top: 30px;
     font-size: 3rem;
 }
+.col-4-section1 .miniatuur{
+    width: 100%;
+}
+.container.col-4 {
+  position: relative;
+  font-family: Arial;
+}
 
-/*wrapper galerij*/
-.wrapper {
-        width: 100%;
-        margin: 100px auto;
-    }
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-    div.gallery {
-        margin-top: 30px;
-    }
-
-    div.gallery ul {
-        list-style-type: none;
-        margin-left: 15px;
-    }
-
-    /* animation */
-    div.gallery ul li, div.gallery li img {
-        -webkit-transition: all 0.1s ease-in-out;
-        -moz-transition: all 0.1s ease-in-out;
-        -o-transition: all 0.1s ease-in-out;
-        transition: all 0.1s ease-in-out;
-    }
-
-    div.gallery ul li {
-        position: relative;
-        float: left;
-        width: 250px;
-        height: 250px;
-        margin: 5px;
-        padding: 5px;
-        z-index: 0;
-    }
-
-
-    div.gallery ul li:hover {
-        z-index: 5;
-    }
-
-
-    div.gallery ul li img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        border: 1px solid #dddddd;
-        padding: 5px;
-        width: 220px;
-        height: 220px;
-        background: #f0f0f0;
-    }
-
-    div.gallery ul li img:hover {
-        width: 260px;
-        height: 260px;
-        margin-top: -100px;
-        margin-left: -100px;
-        top: 65%;
-        left: 65%;
-    }
-    span.foto-titel{
-        font-size: 1.5rem;
-        text-transform: uppercase;
-    }
-      /* Responsive hack */
-    @media only screen and (min-width: 499px) and (max-width: 1212px) {
-        .wrapper {
-            width: 500px;
-        }
-    }
-
-    @media only screen and (max-width: 498px) {
-        .wrapper {
-            width: 300px;
-        }
-
-        div.gallery ul {
-            list-style-type: none;
-            margin: 0;
-        }
-    } 
     </style>
 </head>
 <body>
+   
+    
+    <div class="container col-4">
+        <div class="row">
+            <div class="col-4 col-4-section1">
+      <img class="miniatuur" src="img/html.jpg" alt="Nature">
+      <div class="text-block">
+        <h4>Nature</h4>
+        <p>What a beautiful sunrise</p>
+      </div>
+    </div>
+</div>
+</div>
+    <div class="container col-4">
+        <div class="row">
+            <div class="col-4 col-4-section1">
+                <img class="miniatuur" src="img/html.jpg" alt="Nature">
+                <div class="text-block">
+                  <h4>Nature</h4>
+                  <p>What a beautiful sunrise</p>
+      </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
     <section>
         <div class="container-section-2">
             <div class="row">
