@@ -4,8 +4,12 @@
 .col-2-nav{
     text-align: center;
     padding-top: 18.75rem;
-    font-size: 1.5rem;
+    
     text-transform: uppercase;
+    color: var(--orange);
+}
+.col-2-nav p{
+    font-size: 2rem;
 }
 .col-2-blok{
     height: 95vh;
@@ -22,12 +26,15 @@
     font-family: 'Lobster Two', cursive;
 }
 span.uitroep{
-    color: yellow;
+    color: var(--orange);
 }
 /* MAIN */
 /* MAIN */
 /* MAIN */
-
+.container-main .row{
+    background-color: var(--grey);
+    padding-top: 0.3rem;
+}
 /*kolom 1, titel about me*/
 .titel-hoofding{
     color: var(--black);
@@ -40,8 +47,8 @@ span.uitroep{
 /*kolom 2, foto en tekst*/
 figure {
     position: relative;
-    background: url(../img/butterfly-dress.jpg);
-    width: 341px;
+    background: url(../img/klok-time-for-change.jpg);
+    width: 345px;
     height: 506px;
     box-sizing: border-box;
     display: inline-block;
@@ -55,8 +62,8 @@ figure {
 }
 figure figcaption {
     transform: translateX(-120%);
-    background-color:var(--black);
-    width: 341px;
+    background-color: var(--black);
+    width: 345px;
     height: 506px;
     padding: 6.25rem 1.25rem 3.12rem 1.25rem;
     position: absolute;
@@ -72,9 +79,10 @@ figure:hover figcaption {
     transform: translate(0, 0);
 }
 /*kolom 3, quote*/
-.extra {
-    padding: 6em 2em 0em 2em;
+p.extra {
+    padding: 9em 0em 0em 5.5em;
     position:relative;
+    color: var(--white);
 }
 
 /* SECTION 1 */
@@ -82,6 +90,11 @@ figure:hover figcaption {
 /* SECTION 1 */
 .col-2-section1{
 
+}
+.contact-hoofding{
+    color: var(--black);
+    padding: 0rem 1.563rem;
+    font-size: 3rem;
 }
 
 /* SECTION 2 */
