@@ -17,6 +17,7 @@
 .blok-text{
     animation: backInDown;
     animation-duration: 3s;
+    padding-top:4rem;
 }
 .col-2-nav p{
     font-size: 2rem;
@@ -77,14 +78,15 @@ figure p.figcaption {
     width: 345px;
     height: 506px;
     margin-top: 0;
-    padding: 13rem 0rem 0rem 5.5rem;
+    padding: 12rem 0rem 0rem 5rem;
     position: absolute;
     transition: all 1.5s ease;
 }
 figure:hover p.figcaption {
-    transition: all 1s ease;
+    transition: all 1.5s ease;
     transform: translate(0, 0);
     color: var(--white);
+    font-size: 1.5rem;
 }
 /*kolom 3, quote*/
 .extra {
@@ -96,12 +98,15 @@ figure:hover p.figcaption {
 /* SECTION 1 */
 /* SECTION 1 */
 /* SECTION 1 */
-.col-2-section1{
-
-}
-.row-section1{
+.col-2.col-2-section1{
+    justify-content: center;
+    text-align: center;
     border: 1px solid var(--grey);
     padding-bottom: 2rem;
+}
+.col-2.col-2-section1:first-child{
+    margin-left: 0rem;
+    
 }
 .contact-section1-hoofding{
     color: var(--black);
@@ -111,6 +116,14 @@ figure:hover p.figcaption {
 }
 .miniatuur{
     font-size: 0.5rem;
+}
+.fa.fa-facebook,
+.fa.fa-linkedin,
+.fa.fa-instagram,
+.fa.fa-twitter{
+color: var(--grey);
+font-size: 2rem;
+line-height: 1.6;
 }
 
 /* SECTION 2 */
