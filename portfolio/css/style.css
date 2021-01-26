@@ -4,9 +4,19 @@
 .col-2-nav{
     text-align: center;
     padding-top: 18.75rem;
-    
     text-transform: uppercase;
     color: var(--orange);
+}
+.titel-webdesign,
+.contact-section1-hoofding,
+.titel-hoofding,
+.titel-hoofding-kennis{
+    animation: fadeInLeft;
+    animation-duration: 1s;
+}
+.blok-text{
+    animation: backInDown;
+    animation-duration: 3s;
 }
 .col-2-nav p{
     font-size: 2rem;
