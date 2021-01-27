@@ -7,23 +7,14 @@
     text-transform: uppercase;
     color: var(--orange);
 }
-.titel-webdesign,
-.contact-section1-hoofding,
-.titel-hoofding,
-.titel-hoofding-kennis{
-    animation: fadeInLeft;
-    animation-duration: 1s;
-}
 .blok-text{
-    animation: backInDown;
-    animation-duration: 3s;
     padding-top:4rem;
 }
 .col-2-nav p{
     font-size: 2rem;
 }
 .col-2-blok{
-    height: 95vh;
+    height: 100vh;
     width:50%;
     background-color: var(--black);
 }
@@ -44,7 +35,7 @@ span.uitroep{
 /* MAIN */
 .container-main .row{
     background-color: var(--grey);
-    padding-top: 0.3rem;
+    padding: 2rem 0;
 }
 /*kolom 1, titel about me*/
 .titel-hoofding{
@@ -71,7 +62,6 @@ figure {
     backface-visibility: hidden;
     /* box-shadow: 3px 2px 24px 0px var(--grey); */
 }
-
 figure p.figcaption {
     transform: translateX(-120%);
     background-color: var(--black);
@@ -88,25 +78,24 @@ figure:hover p.figcaption {
     color: var(--white);
     font-size: 1.5rem;
 }
-/*kolom 3, quote*/
 .extra {
     padding: 3em 2em 0em 2em;
     position:relative;
-    color: var(--white);
+    color: var(--black);
 }
-
-/* SECTION 1 */
-/* SECTION 1 */
-/* SECTION 1 */
+/* SECTION 1, cv en Social media */
+/* SECTION 1, cv en Social media */
+/* SECTION 1, cv en Social media */
 .col-2.col-2-section1{
     justify-content: center;
     text-align: center;
-    border: 1px solid var(--grey);
-    padding-bottom: 2rem;
+    border: 1px solid var(--orange);
+    padding: 3rem 0;
+    margin-top: 2rem;
+    margin-left: 2rem;
 }
 .col-2.col-2-section1:first-child{
     margin-left: 0rem;
-    
 }
 .contact-section1-hoofding{
     color: var(--black);
@@ -117,34 +106,42 @@ figure:hover p.figcaption {
 .miniatuur{
     font-size: 0.5rem;
 }
+.uitroepteken{
+    color: var(--orange);
+}
 .fa.fa-facebook,
 .fa.fa-linkedin,
 .fa.fa-instagram,
 .fa.fa-twitter{
-color: var(--grey);
+color: var(--orange);
 font-size: 2rem;
 line-height: 1.6;
 }
-
-/* SECTION 2 */
-/* SECTION 2 */
-/* SECTION 2 */
+/* SECTION 2, mijn opdrachten */
+/* SECTION 2, mijn opdrachten */
+/* SECTION 2, mijn opdrachten */
 .titel-hoofding-kennis{
     color: var(--black);
     writing-mode: vertical-lr;
     text-orientation: mixed;
-    top: 30px;
+    /* top: 30px;  */
     font-size: 3rem;
     padding-left: 9.5rem;
-    padding-top: 0.9em;
+    /* padding-top: 0.9rem;
     padding-right: 0;
-    margin-right: 0;
+    margin-right: 0; */
 }
 /*SECTION 2: WRAPPER GALLERIJ*/
 /*SECTION 2: WRAPPER GALLERIJ*/
 /*SECTION 2: WRAPPER GALLERIJ*/
+.container-section-2{
+    background-color: var(--orange);
+    margin-top: 2rem;
+    padding: 2rem 0 3rem 0;
+}
 .wrapper {
     width: 95%; 
+    height: auto;
 }
 div.gallery ul {
     list-style-type: none;
@@ -156,6 +153,8 @@ div.gallery ul li, div.gallery li img {
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 div.gallery ul li {
     position: relative;
@@ -165,6 +164,7 @@ div.gallery ul li {
     margin: 0.3rem;
     padding: 0.3rem;
     z-index: 0;
+    margin-top: 2.5rem;
 }
 div.gallery ul li:hover {
     z-index: 5;
@@ -173,12 +173,11 @@ div.gallery ul li img {
     position: absolute;
     left: 0;
     top: 0;
-    border: 1px solid var(--grey);
+    border: 1px solid var(--black);
     padding: 0.3rem;
     width: 220px;
     height: 220px;
 }
-
 div.gallery ul li img:hover {
     width: 220px;
     height: 220px;
@@ -191,8 +190,22 @@ span.foto-titel{
     font-size: 1.5rem;
     text-transform: uppercase;
 }
-  /* Responsive hack */
-@media only screen and (min-width: 499px) and (max-width: 1212px) {
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+footer{
+    background-color: var(--black);
+    padding: 1.8rem 0rem;
+    margin-top: 2rem;
+	text-align: center; 
+    color: var(--white);
+}
+address a{
+color: white;
+}
+
+ /* Responsive, SECTION 2: WRAPPER GALLERIJ */
+ @media only screen and (min-width: 499px) and (max-width: 1212px) {
     .wrapper {
         width: 500px;
     }
@@ -207,19 +220,47 @@ span.foto-titel{
     }
 } 
 
-/* FOOTER */
-/* FOOTER */
-/* FOOTER */
-footer{
-    background-color: var(--black);
-    padding: 1.8rem 0rem;
-	text-align: center; 
-	color: var(--white);
-}
-address a{
-color: white;
+/* --------------------------------------------
+< 1200px viewport.
+-------------------------------------------- */
+@media (max-width: 1200px){
+    body{
+        background-color: green;
+    }
+    .container-all{
+        max-width: 1024px;
+        height: auto;
+        margin: auto;
+    }
 
+    
 }
 
+/* --------------------------------------------
+Tablet Landscape.
+-------------------------------------------- */
+@media (max-width: 1024px){
+    body{
+        background-color: red;
+    }
+}
+
+/* --------------------------------------------
+Tablet Portrait.
+-------------------------------------------- */
+@media (max-width: 768px){
+    body{
+        background-color:blue;
+    }
+}
+
+/* --------------------------------------------
+Smartphones.
+-------------------------------------------- */
+@media (max-width: 600px){
+    body{
+        background-color: coral;
+    }
+}
 
 
