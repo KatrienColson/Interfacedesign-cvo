@@ -1,7 +1,7 @@
 /*HEADER*/
 /*HEADER*/
 /*HEADER*/
-.col-2-nav{
+.col-2-titel-frontenddeveloper{
     text-align: center;
     padding-top: 18.75rem;
     text-transform: uppercase;
@@ -10,12 +10,12 @@
 .blok-text{
     padding-top:4rem;
 }
-.col-2-nav p{
+.col-2-titel-frontenddeveloper p{
     font-size: 2rem;
 }
 .col-2-blok{
     height: 100vh;
-    width:50%;
+    width: 50%;
     background-color: var(--black);
 }
 .blok-text{
@@ -42,8 +42,8 @@ span.uitroep{
     color: var(--black);
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    left: 480px;
-    top: 30px;
+    /* left: 480px;
+    top: 30px; */
     font-size: 3rem;
 }
 /*kolom 2, foto en tekst*/
@@ -60,7 +60,6 @@ figure {
     transition: all 0.80s ease;
     overflow: hidden;
     backface-visibility: hidden;
-    /* box-shadow: 3px 2px 24px 0px var(--grey); */
 }
 figure p.figcaption {
     transform: translateX(-120%);
@@ -83,6 +82,15 @@ figure:hover p.figcaption {
     position:relative;
     color: var(--black);
 }
+.extra p{
+    text-indent: 20px;
+    hyphens: auto;
+}
+.extra p.firstletter::first-letter {
+    font-size: 200%;
+    color: var(--orange);
+    font-family: 'Lobster Two', cursive;
+}
 /* SECTION 1, cv en Social media */
 /* SECTION 1, cv en Social media */
 /* SECTION 1, cv en Social media */
@@ -90,21 +98,26 @@ figure:hover p.figcaption {
     justify-content: center;
     text-align: center;
     border: 1px solid var(--orange);
-    padding: 3rem 0;
+    padding: 0 0;
     margin-top: 2rem;
     margin-left: 2rem;
+    padding-top: 2rem;
 }
 .col-2.col-2-section1:first-child{
     margin-left: 0rem;
 }
 .contact-section1-hoofding{
     color: var(--black);
-    padding: 0rem 1.563rem;
-    font-size: 3rem;
-    padding-left:0;
+    font-size: 2rem;
+    padding-left: 1.5rem;
+    text-align: left;
+    padding-bottom: 2rem;
+}
+.download-text{
+    padding-bottom: 2rem;
 }
 .miniatuur{
-    font-size: 0.5rem;
+    font-size: 0.5rem; 
 }
 .uitroepteken{
     color: var(--orange);
@@ -113,82 +126,61 @@ figure:hover p.figcaption {
 .fa.fa-linkedin,
 .fa.fa-instagram,
 .fa.fa-twitter{
-color: var(--orange);
-font-size: 2rem;
-line-height: 1.6;
+    color: var(--orange);
+    font-size: 2rem;
+    line-height: 1.6;
 }
 /* SECTION 2, mijn opdrachten */
 /* SECTION 2, mijn opdrachten */
 /* SECTION 2, mijn opdrachten */
-.titel-hoofding-kennis{
-    color: var(--black);
-    writing-mode: vertical-lr;
-    text-orientation: mixed;
-    /* top: 30px;  */
-    font-size: 3rem;
-    padding-left: 9.5rem;
-    /* padding-top: 0.9rem;
-    padding-right: 0;
-    margin-right: 0; */
+.contact-section1-opdrachten{
+    color: var(--white);
+    text-align: left;
+    font-size: 2rem;
+    text-align: left;
 }
-/*SECTION 2: WRAPPER GALLERIJ*/
-/*SECTION 2: WRAPPER GALLERIJ*/
-/*SECTION 2: WRAPPER GALLERIJ*/
 .container-section-2{
     background-color: var(--orange);
     margin-top: 2rem;
-    padding: 2rem 0 3rem 0;
+    padding-top: 2rem;
 }
-.wrapper {
-    width: 95%; 
-    height: auto;
+.container-box{
+    display: flex;
+    width: 100%;
+    padding: 4% 2%; 
+    box-sizing: border-box;
+    height: 50vh;
+} 
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 0.625rem;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+    background-color: var(--white);
 }
-div.gallery ul {
-    list-style-type: none;
-    margin-left: 1.44rem;
-}
-/* animation */
-div.gallery ul li, div.gallery li img {
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-}
-div.gallery ul li {
-    position: relative;
-    float: left;
-    width: 220px;
-    height: 220px;
-    margin: 0.3rem;
-    padding: 0.3rem;
-    z-index: 0;
-    margin-top: 2.5rem;
-}
-div.gallery ul li:hover {
-    z-index: 5;
-}
-div.gallery ul li img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    border: 1px solid var(--black);
-    padding: 0.3rem;
-    width: 220px;
-    height: 220px;
-}
-div.gallery ul li img:hover {
-    width: 220px;
-    height: 220px;
-    margin-top: -6.25rem;
-    margin-left: -8.44rem;
-    top: 65%;
-    left: 65%;
-}
-span.foto-titel{
-    font-size: 1.5rem;
+.box > img {
+    width: 100%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .8s;
+    filter: grayscale(70%);
+} 
+.box > .box-span {
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+    line-height: 6.6;
     text-transform: uppercase;
+}
+.box:hover { 
+    flex: 1 1 50%; 
+}
+.box:hover > img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(0%);
 }
 /* FOOTER */
 /* FOOTER */
@@ -204,36 +196,14 @@ address a{
 color: white;
 }
 
- /* Responsive, SECTION 2: WRAPPER GALLERIJ */
- @media only screen and (min-width: 499px) and (max-width: 1212px) {
-    .wrapper {
-        width: 500px;
-    }
-}
-@media only screen and (max-width: 498px) {
-    .wrapper {
-        width: 300px;
-    }
-    div.gallery ul {
-        list-style-type: none;
-        margin: 0;
-    }
-} 
-
 /* --------------------------------------------
 < 1200px viewport.
 -------------------------------------------- */
 @media (max-width: 1200px){
     body{
         background-color: green;
+        margin-right: 2rem;
     }
-    .container-all{
-        max-width: 1024px;
-        height: auto;
-        margin: auto;
-    }
-
-    
 }
 
 /* --------------------------------------------
@@ -242,6 +212,7 @@ Tablet Landscape.
 @media (max-width: 1024px){
     body{
         background-color: red;
+        margin: 0 2rem;
     }
 }
 
@@ -260,7 +231,84 @@ Smartphones.
 @media (max-width: 600px){
     body{
         background-color: coral;
+        margin-right: 1rem;
     }
+    /*HEADER*/
+    .col-2.col-2-nav{
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    .col-2-blok{
+        height: auto;
+        width:50%;
+        background-color: var(--black);
+    }
+    .blok-text{
+        color: var(--white);
+        font-size: 4rem;
+        font-family: 'Lobster Two', cursive;
+        padding: 1rem 0;
+        writing-mode: horizontal-tb;
+        text-align: center;
+    }
+    /*MAIN*/
+    .container-main .row{
+        /* padding: 0; */
+    }
+    .titel-hoofding{
+        color: var(--black);
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+        font-size: 3rem;
+        text-align: center;
+    }
+    figure {
+        position: relative;
+        background: url(../img/klok-time-for-change.jpg);
+        width: 345px;
+        height: 506px;
+        box-sizing: border-box;
+        display: inline-block;
+        margin: 0 auto;
+        background-color: var(--white);
+        color: var(--white);
+        transition: all 0.80s ease;
+        overflow: hidden;
+        backface-visibility: hidden;
+    }
+    figure p.figcaption {
+        display: none;
+        /* transform: translateX(-120%);
+        background-color: var(--black);
+        width: 345px;
+        height: 506px;
+        margin-top: 0;
+        padding: 12rem 0rem 0rem 5rem;
+        position: absolute;
+        transition: all 1.5s ease; */
+    }
+    figure:hover p.figcaption {
+        display: none;
+        /* transition: all 1.5s ease;
+        transform: translate(0, 0);
+        color: var(--white);
+        font-size: 1.5rem; */
+    }
+
+
+    /*cv & MEDIA*/
+        .col-2.col-2-section1{
+            justify-content: center;
+            text-align: center;
+            border: 1px solid var(--orange);
+            padding: 3rem 0;
+            margin-top: 2rem;
+            margin-left: 0;
+        }
+        .col-2.col-2-section1:first-child{
+            margin-left: 0rem;
+        }
+ 
 }
 
 

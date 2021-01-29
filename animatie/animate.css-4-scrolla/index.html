@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cool Text Effects Using CSS Text-Shadows</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="scroll-animations">
+    <div id="vintage">
+        <h1 class="animate" data-animate="tada">Vintage retro</h1>
+    </div>
+    <div id="neon">
+        <h1 class="animate" data-animate="flash" data-duration="0.5s" data-iteration="2">Neon</h1>
+    </div>
+    <div id="inset">
+        <h1 class="animate" data-animate="wobble" data-duration="1.5s" data-delay="0.1s">Inset</h1>
+    </div>
+    <div id="anaglyphic">
+        <h1 class="animate" data-animate="rubberBand" data-duration="2s">Anaglyphic</h1>
+    </div>
+    <div id="boardgame">
+        <h1 class="animate" data-animate="headShake" data-duration="3s" data-delay="0.1s">Board Game</h1>
+    </div>
+    <div id="threedee">
+        <h1 class="animate" data-animate="lightSpeedOutRight" data-duration="250ms" data-delay="0.1s">Headline</h1>
+    </div>
+    <!-- animate.css toevoegen (import in style.css) -->
+ <!--    laatste versie CDN jQuery inladen  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <!-- Scrolla inladen -->
+    <script src="js/jquery.scrolla.js"></script>
+    <!-- Scrolla initialiseren -->
+    <script>
+    $('.animate').scrolla();
+    </script>
+</body>
+
+</html>

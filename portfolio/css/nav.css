@@ -4,13 +4,15 @@
 }
 #navbar {
     overflow: hidden;
-    background-color: var(--black);
+    background-color: var(--grey);
     z-index: 10;
+    -webkit-box-shadow: 28px 30px 40px -29px rgba(255,103,129,0.56); 
+    box-shadow: 28px 30px 40px -29px rgba(255,103,129,0.56);
 }
 #navbar a {
     float: left;
     display: block;
-    color: var(--white);
+    color: var(--black);
     text-align: center;
     padding: 0.875rem 1rem;
     text-decoration: none;

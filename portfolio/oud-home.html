@@ -13,21 +13,91 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--invoegen van animatie-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--icons toevoegen -->
         <title>Portfolio Katr!en</title>
+        <style>
+.wrapper {
+    width: 95%; 
+    height: auto;
+}
+div.gallery ul {
+    list-style-type: none;
+    margin-left: 1.44rem;
+}
+/* animation */
+div.gallery ul li, div.gallery li img {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+div.gallery ul li {
+    position: relative;
+    float: left;
+    width: 220px;
+    height: 220px;
+    margin: 0.3rem;
+    padding: 0.3rem;
+    z-index: 0;
+    margin-top: 2.5rem;
+}
+div.gallery ul li:hover {
+    z-index: 5;
+}
+div.gallery ul li img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid var(--black);
+    padding: 0.3rem;
+    width: 220px;
+    height: 220px;
+}
+div.gallery ul li img:hover {
+    width: 220px;
+    height: 220px;
+    margin-top: -6.25rem;
+    margin-left: -8.44rem;
+    top: 65%;
+    left: 65%;
+}
+span.foto-titel{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+/* Responsive, SECTION 2: WRAPPER GALLERIJ */
+@media only screen and (min-width: 499px) and (max-width: 1212px) {
+    .wrapper {
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 498px) {
+    .wrapper {
+        width: 300px;
+    }
+    div.gallery ul {
+        list-style-type: none;
+        margin: 0;
+    }
+} 
+        </style>
     </head>
     <body>
+
         <!-- HEADER -->
         <!-- HEADER -->
         <!-- HEADER -->
         <div class="container-all">
             <header id="home">
-                <div class="container-home">
+                <div class="container">
                     <div class="row">
-                        <div class="col-2 col-2-titel-frontenddeveloper">
-                            <p class="titel-webdesign">Webdesign<br> 
+                        <div class="col-2 col-2-nav">
+                            <p class="titel-webdesign">Webdesigen<br> 
                                 front-end developer
                             </p>
                         </div>
                         <div class="col-2 col-2-blok">
+                            <span class="menu-streep" onclick="openNav()">&#9776;</span>
                             <p class="blok-text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">Portfolio Katr<span class="uitroep">!</span>en</p>
                         </div>
                     </div>
@@ -36,7 +106,7 @@
         <!-- NAVIGATIE -->
         <!-- NAVIGATIE -->
         <!-- NAVIGATIE -->
-            <div class="container-nav">
+            <div class="container">
                 <div class="row">
                     <div class="col-1 nav">
                         <div id="navbar">
@@ -57,7 +127,7 @@
                 <div class="container-main">
                     <div class="row">
                         <div class="col-3">
-                            <p class="titel-hoofding" data-aos="fade-right" data-aos-duration="1500">About me</p>
+                            <p class="titel-hoofding" data-aos="fade-right">About me</p>
                         </div>
                         <div class="col-3">
                                 <figure>
@@ -68,20 +138,19 @@
                         </div>
                         <div class="col-3">
                             <div class="extra">
-                                <p class="firstletter">
+                                <p>
                                 Ik ben een sociaal en creatief iemand met een groot verantwoordelijkheidsgevoel. 
                                 Doordat ik stevig in mijn schoenen sta, weet ik mij uitstekend te redden in stressvolle 
-                                </p>
-                                <p>
-                                Graag werk ik in een groep waar vooral teamspirit hoog in het vaandel wordt ge-dragen en waar het wederzijdse 
+                                <br>
+                                <br>
+                                Graag werk ik in een groep waar teamspirit hoog in het vaandel wordt gedragen en waar het wederzijdse 
                                 leerproces nooit stil staat. 
-                                </p>
-                                <p>
+                                <br>
+                                <br>
                                 Ik vind nieuwe professionele uitdagingen altijd zeer interessant en doe graag nieuwe kennis op, 
                                 werk efficiënt zelfstandig en ben van mening dat overleg met collega's alleen maar bijdraagt om tot een degelijk 
                                 resultaat te komen tegen de beoogde deadline.
-                                </p>
-                            </div>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -93,17 +162,17 @@
                 <div class="container-section-1">
                     <div class="row row-section1">
                     <div class="col-2 col-2-section1">
-                        <p class="contact-section1-hoofding" data-aos="fade-right" data-aos-duration="1500">Curriculum Vitae</p>
+                        <p class="contact-section1-hoofding" data-aos="fade-right">Curriculum Vitae</p>
                             <img class='contact-section1-cv' src="img/cv-Miniatuur-katrien-Colson-2021.jpg" alt="foto-cv">
-                            <p class="download-text"><span class="miniatuur">download op naam!</span><a href ="img/cv-Katrien-Colson-2021.pdf" alt="cv" target="_blank" width="2480px" height="3508px"> Katr<span class="uitroepteken">!</span>en.com</a></p>
+                            <p><span class="miniatuur">download op naam!</span><a href ="img/cv-Katrien-Colson-2021.pdf" alt="cv" target="_blank" width="2480px" height="3508px"> Katr<span class="uitroepteken">!</span>en.com</a></p>
                     </div>
                     <div class="col-2 col-2-section1">
-                        <p class="contact-section1-hoofding" data-aos="fade-left" data-aos-duration="1500">Social Media</p>
+                        <p class="contact-section1-hoofding" data-aos="fade-left">Social Media</p>
                         <p><a href="#" target="_blank" class="fa fa-facebook"></a></p>
                         <p><a href="#" target="_blank" class="fa fa-linkedin"></a></p>
                         <p><a href="#" target="_blank" class="fa fa-instagram"></a></p>
                         <p><a href="#" target="_blank" class="fa fa-twitter"></a></p>
-                    </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -111,40 +180,24 @@
         <!-- SECTION 2, mijn opdrachten -->
         <!-- SECTION 2, mijn opdrachten -->
             <section id="mijn-opdrachten">
-                <div class="container-all">
-                    <div class="container-section-2">
-                        <div class="row">
-                            <div class="col-1 col-1-section2">
-                                <p class="contact-section1-opdrachten" data-aos="fade-right" data-aos-duration="1500">Mijn opdrachten</p>
-                                <div class="container-box">
-                                    <div class="box">
-                                        <img src="img/html.jpg" alt="html">
-                                    <span class="box-span">Html</span>
-                                    </div>
-                                    <div class="box">
-                                        <img src="img/javascript-klein.jpg" alt="javascript">
-                                    <span class="box-span">Javascript</span>
-                                    </div>
-                                    <div class="box">
-                                        <img src="img/php-klein.jpg" alt="php">
-                                    <span class="box-span">Php</span>
-                                    </div>
-                                    <div class="box">
-                                        <img src="img/scss-klein.jpg" alt="scss">
-                                    <span class="box-span">Scss</span>
-                                    </div>
-                                    <div class="box">
-                                        <img src="img/drupal-klein.jpg" alt="drupal">
-                                    <span class="box-span">Drupal</span>
-                                    </div>
-                                    <div class="box">
-                                        <img src="img/photoshop-klein.jpg" alt="photoshop">
-                                    <span class="box-span">Photoshop</span>
-                                    </div>
+                <div class="container-section-2">
+                    <div class="row">
+                        <div class="col-1 col-1-section2">
+                            <div class="wrapper">
+                                <div class="gallery">
+                                <ul>
+                                <li><a href="https://www.google.com" target="_blank"><span class="foto-titel">html & css</span><img src="img/html.jpg" alt="html"></a></li>
+                                <li><a href="https://katriencolson.github.io/learning-front-end/2.mastering-javascript/3.snake/index.html" target="_blank"><span class="foto-titel">javascript</span><img src="img/javascript-klein.jpg" alt="javascript"></a></li>
+                                <li><a href="https://www.google.com" target="_blank"><span class="foto-titel">php</span><img src="img/php-klein.jpg" alt="php"></a></li>
+                                <li><a href="https://www.google.com" target="_blank"><span class="foto-titel">scss</span><img src="img/scss-klein.jpg" alt="scss"></a></li>
+                                <li><a href="https://www.google.com" target="_blank"><span class="foto-titel">drupal</span><img src="img/drupal-klein.jpg" alt="drupal"></a></li> 
+                                <li><a href="https://www.google.com" target="_blank"><span class="foto-titel">photoshop</span><img src="img/photoshop-klein.jpg" alt="photoshop"></a></li>
+                                <div class="titel-hoofding-kennis" data-aos="fade-left">Mijn opdrachten</div>
+                                </ul>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </div>  
+                    </div>              
                 </div>
             </section>
         <!-- FOOTER -->
