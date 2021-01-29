@@ -1,24 +1,26 @@
 /*HEADER*/
 /*HEADER*/
 /*HEADER*/
-.col-2-titel-frontenddeveloper{
+.col-2-left{
     text-align: center;
     padding-top: 18.75rem;
     text-transform: uppercase;
     color: var(--orange);
+    background-image: url("../img/image-klein-background3.jpg");
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
 }
-.blok-text{
-    padding-top:4rem;
+.col-2-left h5{
+    color: var(--orange);
 }
-.col-2-titel-frontenddeveloper p{
-    font-size: 2rem;
-}
-.col-2-blok{
+.col-2-right{
     height: 100vh;
     width: 50%;
     background-color: var(--black);
 }
-.blok-text{
+.blok-text-right{
     color: var(--white);
     writing-mode: vertical-lr;
     text-orientation: mixed;
@@ -26,6 +28,7 @@
     top: 30px;
     font-size: 6rem;
     font-family: 'Lobster Two', cursive;
+    padding-top:4rem;
 }
 span.uitroep{
     color: var(--orange);
@@ -36,15 +39,6 @@ span.uitroep{
 .container-main .row{
     background-color: var(--grey);
     padding: 2rem 0;
-}
-/*kolom 1, titel about me*/
-.titel-hoofding{
-    color: var(--black);
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    /* left: 480px;
-    top: 30px; */
-    font-size: 3rem;
 }
 /*kolom 2, foto en tekst*/
 figure {
@@ -70,6 +64,7 @@ figure p.figcaption {
     padding: 12rem 0rem 0rem 5rem;
     position: absolute;
     transition: all 1.5s ease;
+    
 }
 figure:hover p.figcaption {
     transition: all 1.5s ease;
@@ -94,33 +89,41 @@ figure:hover p.figcaption {
 /* SECTION 1, cv en Social media */
 /* SECTION 1, cv en Social media */
 /* SECTION 1, cv en Social media */
-.col-2.col-2-section1{
-    justify-content: center;
-    text-align: center;
-    border: 1px solid var(--orange);
-    padding: 0 0;
-    margin-top: 2rem;
-    margin-left: 2rem;
+.container-section-1{
     padding-top: 2rem;
 }
-.col-2.col-2-section1:first-child{
-    margin-left: 0rem;
+.container-section-1 .row{
+    border: 1px solid var(--orange);
 }
-.contact-section1-hoofding{
-    color: var(--black);
-    font-size: 2rem;
-    padding-left: 1.5rem;
-    text-align: left;
-    padding-bottom: 2rem;
+#pdf{
+    display: none;
+}
+.col-4-someA,
+.col-4-curvA,
+.col-4-someB,
+.col-4-curvB{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.col-4-someA{
+    margin-left: 2rem;
+}
+.col-4-curvB{
+    margin-right: 2rem;
 }
 .download-text{
     padding-bottom: 2rem;
+    margin-left: 1.5rem;
 }
 .miniatuur{
     font-size: 0.5rem; 
 }
 .uitroepteken{
     color: var(--orange);
+}
+.cv-pdf{
+    width: 2480px;
+    height: 3508px;
 }
 .fa.fa-facebook,
 .fa.fa-linkedin,
@@ -143,11 +146,12 @@ figure:hover p.figcaption {
     background-color: var(--orange);
     margin-top: 2rem;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .container-box{
     display: flex;
     width: 100%;
-    padding: 4% 2%; 
+    padding: 4% 0%; 
     box-sizing: border-box;
     height: 50vh;
 } 
@@ -195,24 +199,30 @@ footer{
 address a{
 color: white;
 }
-
 /* --------------------------------------------
 < 1200px viewport.
 -------------------------------------------- */
+/* GEEN AANPASSING
 @media (max-width: 1200px){
     body{
         background-color: green;
-        margin-right: 2rem;
     }
-}
+} */
 
 /* --------------------------------------------
 Tablet Landscape.
 -------------------------------------------- */
 @media (max-width: 1024px){
+    /* CONTROLE
     body{
         background-color: red;
-        margin: 0 2rem;
+    }*/
+    .col-4{
+        flex: 1 1 auto;
+        width: 47.5%;
+        min-width: 320px;
+        padding: 0rem 0rem;
+        margin-left: 0;
     }
 }
 
@@ -220,8 +230,14 @@ Tablet Landscape.
 Tablet Portrait.
 -------------------------------------------- */
 @media (max-width: 768px){
+    /* CONTROLE
     body{
         background-color:blue;
+    } */
+    .horizontaal{
+        color: var(--black);
+        writing-mode: vertical-rl;
+        font-size: 2rem;
     }
 }
 
@@ -229,21 +245,28 @@ Tablet Portrait.
 Smartphones.
 -------------------------------------------- */
 @media (max-width: 600px){
+    /* CONTROLE
     body{
         background-color: coral;
-        margin-right: 1rem;
+    }*/
+    .horizontaal,
+    .horizontaal-wit{
+        color: var(--black);
+        writing-mode: horizontal-tb;
+        font-size: 2rem;
+        text-align: center;
     }
     /*HEADER*/
-    .col-2.col-2-nav{
+    .col-2.col-2-left{
         padding-top: 1rem;
         padding-bottom: 2rem;
     }
-    .col-2-blok{
+    .col-2-right{
         height: auto;
         width:50%;
         background-color: var(--black);
     }
-    .blok-text{
+    .blok-text-right{
         color: var(--white);
         font-size: 4rem;
         font-family: 'Lobster Two', cursive;
@@ -252,63 +275,25 @@ Smartphones.
         text-align: center;
     }
     /*MAIN*/
-    .container-main .row{
-        /* padding: 0; */
-    }
-    .titel-hoofding{
-        color: var(--black);
-        writing-mode: horizontal-tb;
-        transform: rotate(0deg);
-        font-size: 3rem;
-        text-align: center;
-    }
     figure {
-        position: relative;
-        background: url(../img/klok-time-for-change.jpg);
-        width: 345px;
-        height: 506px;
-        box-sizing: border-box;
-        display: inline-block;
-        margin: 0 auto;
-        background-color: var(--white);
-        color: var(--white);
-        transition: all 0.80s ease;
-        overflow: hidden;
-        backface-visibility: hidden;
+        display:none;
     }
     figure p.figcaption {
         display: none;
-        /* transform: translateX(-120%);
-        background-color: var(--black);
-        width: 345px;
-        height: 506px;
-        margin-top: 0;
-        padding: 12rem 0rem 0rem 5rem;
-        position: absolute;
-        transition: all 1.5s ease; */
     }
     figure:hover p.figcaption {
         display: none;
-        /* transition: all 1.5s ease;
-        transform: translate(0, 0);
-        color: var(--white);
-        font-size: 1.5rem; */
     }
-
-
     /*cv & MEDIA*/
-        .col-2.col-2-section1{
-            justify-content: center;
-            text-align: center;
-            border: 1px solid var(--orange);
-            padding: 3rem 0;
-            margin-top: 2rem;
-            margin-left: 0;
-        }
-        .col-2.col-2-section1:first-child{
-            margin-left: 0rem;
-        }
- 
+    .col-4{
+        flex: 1 1 auto;
+        width: 47.5%;
+        min-width: 320px;
+        padding: 0rem 0rem;
+        margin: 1rem 0;
+        text-align: center;
+    }
 }
+
 
 

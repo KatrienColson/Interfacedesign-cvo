@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');/*naam*/
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');/*standaard*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');/*titels*/
 *,
 *::before,
 *::after {
@@ -35,8 +36,10 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'PT Sans Narrow', sans-serif;
-    color: var(--black);
+	font-family: 'PT Sans', sans-serif;
+	color: var(--black);
+	font-weight: 400;
+	font-style: italic;
 }
 h1 {
 	font-size: 4rem;
@@ -132,25 +135,43 @@ footer{
 	width: 95%;
 	min-width: 320px;
     padding: 0 1.563rem; 
-    /* border: 1px solid blue; */
 }
 .col-2{
 	flex: 1 1 auto;
 	width: 47.5%;
 	min-width: 320px;
     padding: 0rem 1.563rem;
-    /* border: 1px solid green; */
 }
 .col-3 {
 	flex: 1 1 auto;
 	width: 31.66666%;
 	min-width: 280px;
-    /* border: 1px solid red; */
 }
 .col-4 {
 	flex: 1 1 auto;
 	width: 23.5%;
 	min-width: 250px;
-    /* border: 1px solid pink; */
+}
+/*col-19 gebruiken met col-76*/
+.col-19perc{
+	flex: 1 1 auto;
+	width: 19%;
+	min-width: 200px;
+}
+.col-76perc{
+	flex: 1 1 auto;
+	width: 76%;
+	min-width: 310px;
+}
+/*col-19 gebruiken met col- 38*/
+.col-38perc {
+	flex: 1 1 auto;
+	width: 38%;
+	min-width: 300px;
+}
+.horizontaal{
+    color: var(--black);
+    writing-mode: vertical-rl;
+    font-size: 3rem;
 }
 

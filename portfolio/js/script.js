@@ -11,3 +11,10 @@ var sticky = navbar.offsetTop;
             navbar.classList.remove("sticky");
         }
     }
+
+
+function printCv(){
+    document.getElementById("pdf").contentWindow.print();
+}
+
+
