@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');/*standaard*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');/*titels*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+    --white: #FFFFFF;
+	--background: #FFFFFF;
+	--black:#292223;
+	--orange: #FF6781;
+	--grey: #fff0f3;
+}
+html{
+	scroll-behavior: smooth;
+}
+body {
+    font: 1.1em/1.3 'PT Sans Narrow', sans-serif;
+	background-color: var(--background);
+}
+.container-all{
+	max-width: 100%;
+	height: auto;
+    margin: auto;
+}
+header{
+	height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'PT Sans', sans-serif;
+	color: var(--black);
+	font-weight: 400;
+	font-style: italic;
+}
+h1 {
+	font-size: 4rem;
+	padding-bottom: 0.94rem
+}
+h2 {
+	font-size: 3.5rem;
+	padding-bottom: 0.625rem;
+}
+h3 {
+	font-size: 3rem;
+	padding-bottom: 0.625rem;
+}
+h4 {
+	font-size: 2.5rem;
+	padding-bottom:  0.625rem;
+}
+h5 {
+	font-size: 2rem;
+	padding-bottom:  0.625rem;
+}
+h6 {
+	font-size: 1.5rem;
+	padding-bottom:  0.625rem;
+}
+p {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 300;
+	font-size: 1.1rem;
+	margin-top: 1rem;
+}
+q{
+	font-family: 'PT Sans Narrow', sans-serif;
+	color: var(--grey);
+}
+a {
+	text-decoration: none;
+	color: var(--black);
+}
+ul {
+    color: var(--black);
+    font-size: 0.8rem; /*maat lettertype navbar*/
+	list-style: none;
+	margin: 0.313rem 0rem;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+.container-home{
+	max-width:100%;
+	width: 1080px;
+	height: auto;
+	padding: 0rem;
+	margin: 0 auto;
+	transition: 5s;
+}
+.container-nav,
+.container-main, 
+.container-section-1,
+.container-section-2,
+footer{
+	max-width:1080px;
+	width: 96%;
+	height: auto;
+	padding: 0rem;
+	margin: 0 auto;
+	margin-top: 2rem; /*dit is de gab om te tonen waar je containers stoppen*/
+}
+.row {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding:0;
+}
+.col-1 {
+	flex: 1 1 auto;
+	width: 95%;
+	min-width: 320px;
+	padding: 0 1.563rem; 
+	border: 1px solid red;
+}
+.col-2{
+	flex: 1 1 auto;
+	width: 47.5%;
+	min-width: 320px;
+	padding: 0rem 1.563rem;
+	border: 1px solid blue;
+}
+.col-3 {
+	flex: 1 1 auto;
+	width: 31.66666%;
+	min-width: 280px;
+	border: 1px solid green;
+}
+.col-4 {
+	flex: 1 1 auto;
+	width: 23.5%;
+	min-width: 250px;
+	border: 1px solid orange;
+}
+/*col-19 gebruiken met col-76*/
+.col-19perc{
+	flex: 1 1 auto;
+	width: 19%;
+	min-width: 200px;
+	border: 1px solid pink;
+}
+.col-76perc{
+	flex: 1 1 auto;
+	width: 76%;
+	min-width: 310px;
+	border: 1px solid purple;
+}
+/*col-19 gebruiken met col- 38*/
+.col-38perc {
+	flex: 1 1 auto;
+	width: 38%;
+	min-width: 300px;
+	border: 1px solid fuchsia;
+}
+.horizontaal{
+    color: var(--black);
+    writing-mode: vertical-rl;
+	font-size: 3rem;
+	border: 1px solid grey;
+}
+
