@@ -164,10 +164,5 @@ footer{
 	min-width: 300px;
 	border: 1px solid fuchsia;
 }
-.horizontaal{
-    color: var(--black);
-    writing-mode: vertical-rl;
-	font-size: 3rem;
-	border: 1px solid grey;
-}
+
 
